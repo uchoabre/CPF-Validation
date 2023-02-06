@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Validação de CPF</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CONSULTA</h1>
+
+        <form>
+            <p>CPF:<input type="text" 
+                    name="cpf" 
+                    maxlength="11" 
+                    id="cpf"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    >
+            </p>
+            <button type="button" id="validate">Checar validação</button>
+            <p id="isValid"></p>
+        </form>
+    </div>
+    
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
